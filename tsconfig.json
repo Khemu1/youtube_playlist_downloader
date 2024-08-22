@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "outDir": "./src/js", // Compiled JavaScript output directory
+    "target": "ESNext",
+    "module": "ESNext",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "baseUrl": "./", // Base directory for resolving non-relative module names
+    "paths": {
+      "*": ["src/*"] // Path mapping for modules
+    }
+  },
+  "include": ["src/**/*.ts"], // Source files
+  "exclude": ["node_modules", "public"] // Exclude directories
+}

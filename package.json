@@ -1,0 +1,26 @@
+{
+  "name": "youtube_playlist_downloader",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start:server": "nodemon --config nodemon.json",
+    "start:client": "nodemon --config nodemon.client.json",
+    "start:browser-sync": "browser-sync start --config bs-config.cjs",
+    "start": "concurrently \"npm run start:server\" \"npm run start:client\" \"npm run start:browser-sync\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/express": "^4.17.21",
+    "@types/typescript": "^2.0.0",
+    "browser-sync": "^3.0.2",
+    "concurrently": "^8.2.2",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.4",
+    "tsx": "^4.17.0",
+    "typescript": "^5.5.4",
+    "youtube-dl-exec": "^3.0.7"
+  }
+}
